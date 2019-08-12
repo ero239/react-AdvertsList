@@ -1,0 +1,164 @@
+.filterWrapper{
+}
+.filter{
+    align-items: center;
+    border-radius:5px !important;
+    -moz-border-radius:5px !important;
+    -ms-border-radius:5px !important;
+    -o-border-radius:5px !important;
+    -webkit-border-radius:5px !important;
+    border: 1px solid rgb(209,220,242);
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    height: 35px;
+    width: 240px;
+    &:hover{
+        background-color: rgb(226, 226, 255);
+    }
+    i{
+        background-image: url(data:image/svg+xml;utf8:;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPHBhdGggZD0ibTEyMS4zLDM0LjZjLTEuNi0xLjYtNC4yLTEuNi01LjgsMGwtNTEsNTEuMS01MS4xLTUxLjFjLTEuNi0xLjYtNC4yLTEuNi01LjgsMC0xLjYsMS42LTEuNiw0LjIgMCw1LjhsNTMuOSw1My45YzAuOCwwLjggMS44LDEuMiAyLjksMS4yIDEsMCAyLjEtMC40IDIuOS0xLjJsNTMuOS01My45YzEuNy0xLjYgMS43LTQuMiAwLjEtNS44eiIgZmlsbD0iIzAwMDAwMCIvPgogIDwvZz4KPC9zdmc+Cg==);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 13px;
+        height: 13px;
+        width: 13px;
+        margin: 0 0 0 5px;
+    }
+}
+
+
+.sortingList{
+    background-color: white;
+    border-radius: 9px !important;
+    -webkit-border-radius: 9px !important;
+    -moz-border-radius: 9px !important;
+    -ms-border-radius: 9px !important;
+    -o-border-radius: 9px !important;
+    overflow: hidden;
+    box-shadow: 0 0 15px 0 rgb(196, 196, 196);
+    height: auto;
+    margin: 2px 0 0 -35px;
+    position: absolute;
+    width: 300px;
+    z-index: 5;
+    :last-child{
+        border-bottom: 0;
+    }
+    
+}
+.sortingListItem{
+    align-items: center;
+    border-bottom: 1px solid rgb(209,220,242);
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    &:hover{
+        background-color: rgb(209,220,242);
+        i{
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTA0LjUwMiw3NS40OTZjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5OC0zNi4yMDQsMEwxNjEuNTk0LDM4Mi4yMDNMNDMuNzAyLDI2NC4zMTFjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5Ny0zNi4yMDQsMCAgICBjLTkuOTk4LDkuOTk3LTkuOTk4LDI2LjIwNSwwLDM2LjIwM2wxMzUuOTk0LDEzNS45OTJjOS45OTQsOS45OTcsMjYuMjE0LDkuOTksMzYuMjA0LDBMNTA0LjUwMiwxMTEuNyAgICBDNTE0LjUsMTAxLjcwMyw1MTQuNDk5LDg1LjQ5NCw1MDQuNTAyLDc1LjQ5NnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+);
+            display: block !important;
+        }
+    }
+    span{
+        margin: 0 0 0 8px;
+    }
+    i{
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTA0LjUwMiw3NS40OTZjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5OC0zNi4yMDQsMEwxNjEuNTk0LDM4Mi4yMDNMNDMuNzAyLDI2NC4zMTFjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5Ny0zNi4yMDQsMCAgICBjLTkuOTk4LDkuOTk3LTkuOTk4LDI2LjIwNSwwLDM2LjIwM2wxMzUuOTk0LDEzNS45OTJjOS45OTQsOS45OTcsMjYuMjE0LDkuOTksMzYuMjA0LDBMNTA0LjUwMiwxMTEuNyAgICBDNTE0LjUsMTAxLjcwMyw1MTQuNDk5LDg1LjQ5NCw1MDQuNTAyLDc1LjQ5NnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzAwMDAwMCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 13px;
+        height: 15px;
+        margin: 0 20px 0 auto;
+        width: 15px;
+    }
+}
+
+.filterList{
+    background-color: white;
+    border: 1px solid rgb(209,220,242);
+    border-radius: 9px !important;
+    -webkit-border-radius: 9px !important;
+    -moz-border-radius: 9px !important;
+    -ms-border-radius: 9px !important;
+    -o-border-radius: 9px !important;
+    /* box-shadow: 0 0 15px 0 rgb(196, 196, 196); */
+    cursor: default;
+    height: auto;
+    margin: 2px auto;
+    overflow: hidden;
+    /* position: absolute; */
+    width: 300px;
+    z-index: 2;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+.filterListItem{
+    align-items: center;
+    border-bottom: 1px solid rgb(209,220,242);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    span{
+        margin: 15px auto 0 10px;
+        font-weight: 500;
+    }
+}
+.filterListItemFormCategory{
+    margin: 0 0 0 25px;
+}
+.filterListItemFormCategoryItem{
+    align-items: center;
+    display: flex;
+    margin: 7px 0;
+    label{
+        color: rgb(59, 59, 59);
+        font-size: 14px;
+        margin: 0 0 0 4px;
+    }
+    input{
+        cursor: pointer;
+        height: 18px;
+        width: 18px;
+    }
+}
+.filterListItemFormPrice{
+    display: flex;
+    margin: 5px 0 15px 0;
+    input{
+        width: 100px;
+        height: 20px;
+        border: 1px solid rgb(196, 196, 196);
+        padding: 3px 4px;
+        font-size: 14px;
+        border-radius: 3px    ;
+        -webkit-border-radius: 3px    ;
+        -moz-border-radius: 3px    ;
+        -ms-border-radius: 3px    ;
+        -o-border-radius: 3px    ;
+        text-align: left;
+    }
+    :first-child{
+        margin: 0 10px 0 30px;
+    }
+    :last-child{
+        margin: 0 30px 0 10px;
+    }
+}
+.filterListItemFormFavorites{
+    margin: 15px 0 15px 0;
+    span{
+        margin: 0 0 0 10px;
+    }
+    input{
+        cursor: pointer;
+        height: 18px;
+        margin: 0 0 0 30px;
+        width: 18px;
+    }
+}
